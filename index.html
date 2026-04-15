@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevDroid AI - プライバシーポリシー</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 24px; border-bottom: 2px solid #58A6FF; padding-bottom: 8px; }
+    h2 { font-size: 18px; margin-top: 32px; color: #0066cc; }
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; }
+    .last-updated { color: #666; font-size: 13px; }
+    .contact { background: #f5f5f5; padding: 16px; border-radius: 8px; margin-top: 32px; }
+  </style>
+</head>
+<body>
+
+<h1>DevDroid AI プライバシーポリシー</h1>
+<p class="last-updated">最終更新日：2026年4月15日</p>
+
+<p>SakageNoAn（以下「当社」）は、DevDroid AI（以下「本アプリ」）において、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリが収集する情報およびその使用方法について説明します。</p>
+
+<h2>1. 収集する情報</h2>
+<p>本アプリは以下の情報を収集します：</p>
+<ul>
+  <li><strong>アカウント情報</strong>：GitHub / GitLab / Google OAuth を通じたメールアドレス・ユーザー名</li>
+  <li><strong>リポジトリ情報</strong>：ユーザーが登録したGitHub / GitLabリポジトリの名前・構成</li>
+  <li><strong>利用状況</strong>：AI修正・ビルドの使用回数（プラン制限の管理目的）</li>
+  <li><strong>FCMトークン</strong>：プッシュ通知の送信目的</li>
+  <li><strong>会話履歴</strong>：AI との会話内容（端末のローカルDBに保存）</li>
+</ul>
+
+<h2>2. 情報の使用目的</h2>
+<p>収集した情報は以下の目的で使用します：</p>
+<ul>
+  <li>本アプリのサービス提供・機能の実現</li>
+  <li>プラン別機能制限の管理</li>
+  <li>ビルド完了・修正完了などのプッシュ通知の送信</li>
+  <li>サービスの改善・不具合の修正</li>
+  <li>お問い合わせへの対応</li>
+</ul>
+
+<h2>3. 第三者サービスへの情報提供</h2>
+<p>本アプリは以下の第三者サービスを利用しており、各サービスのプライバシーポリシーに従い情報が処理されます：</p>
+<ul>
+  <li><strong>Anthropic Claude API</strong>：AIによるコード解析・修正（コード内容を送信）</li>
+  <li><strong>GitHub / GitLab API</strong>：リポジトリへのアクセス・コードのpush</li>
+  <li><strong>Supabase</strong>：認証・ユーザーデータの管理</li>
+  <li><strong>Cloudflare Workers</strong>：APIゲートウェイとしての処理</li>
+  <li><strong>Stripe</strong>：サブスクリプション決済の処理</li>
+  <li><strong>Firebase（Google）</strong>：プッシュ通知・APK配布</li>
+  <li><strong>ElevenLabs</strong>：音声合成（テキスト読み上げ）</li>
+</ul>
+
+<h2>4. データの保存・保護</h2>
+<ul>
+  <li>会話履歴は端末のローカルデータベースに保存され、サーバーには送信されません</li>
+  <li>APIキーなどの秘密情報はCloudflare Workers内でのみ管理され、アプリ側には保存されません</li>
+  <li>通信はすべてHTTPS（TLS）で暗号化されています</li>
+  <li>サインアウト時に端末内のデータはクリアされます</li>
+</ul>
+
+<h2>5. データの保持期間</h2>
+<ul>
+  <li>アカウント情報：退会まで保持</li>
+  <li>利用状況データ：月次リセット（プラン制限カウンター）</li>
+  <li>会話履歴：ユーザーがリセットするまで端末に保持</li>
+</ul>
+
+<h2>6. ユーザーの権利</h2>
+<p>ユーザーは以下の権利を有します：</p>
+<ul>
+  <li>収集データの開示請求</li>
+  <li>データの訂正・削除の請求</li>
+  <li>アカウントの削除（アプリ内またはお問い合わせより）</li>
+</ul>
+
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは13歳未満の子どもを対象としておらず、意図的に13歳未満の個人情報を収集することはありません。</p>
+
+<h2>8. プライバシーポリシーの変更</h2>
+<p>本ポリシーは必要に応じて更新されます。重要な変更がある場合はアプリ内またはメールにてお知らせします。</p>
+
+<h2>9. 準拠法</h2>
+<p>本ポリシーは日本法に準拠します。</p>
+
+<div class="contact">
+  <h2 style="margin-top:0">10. お問い合わせ</h2>
+  <p>プライバシーに関するご質問・ご要望は以下までお問い合わせください：</p>
+  <p>
+    <strong>開発者：</strong>SakageNoAn<br>
+    <strong>メール：</strong>love.riko1@gmail.com
+  </p>
+</div>
+
+</body>
+</html>
