@@ -258,6 +258,63 @@
       font-weight: 700;
     }
 
+    /* Compare table */
+    .compare-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-top: 32px;
+    }
+    table.compare {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 520px;
+      font-size: 14px;
+    }
+    table.compare th,
+    table.compare td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    table.compare thead th {
+      background: var(--surface-2);
+      color: var(--text-secondary);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+    table.compare thead th.col-plan {
+      text-align: center;
+      min-width: 88px;
+    }
+    table.compare thead th.col-plan.highlighted {
+      color: var(--accent);
+    }
+    table.compare tbody td {
+      color: var(--text);
+    }
+    table.compare tbody td.col-plan {
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+    table.compare tbody td.muted {
+      color: var(--text-secondary);
+    }
+    table.compare tbody td.check {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    table.compare tbody tr:last-child td {
+      border-bottom: none;
+    }
+    table.compare tbody tr:hover td {
+      background: var(--surface-2);
+    }
+
     /* FAQ */
     .faq {
       max-width: 760px;
@@ -465,6 +522,63 @@
         <li>優先サポート</li>
       </ul>
     </div>
+  </div>
+
+  <div class="compare-wrap">
+    <table class="compare">
+      <thead>
+        <tr>
+          <th>機能</th>
+          <th class="col-plan">Free</th>
+          <th class="col-plan">Starter</th>
+          <th class="col-plan highlighted">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AI 修正</td>
+          <td class="col-plan">月 15 回</td>
+          <td class="col-plan">月 80 回</td>
+          <td class="col-plan">月 500 回</td>
+        </tr>
+        <tr>
+          <td>クラウドビルド</td>
+          <td class="col-plan">月 30 回</td>
+          <td class="col-plan">月 150 回</td>
+          <td class="col-plan">月 300 回</td>
+        </tr>
+        <tr>
+          <td>音声読み上げ</td>
+          <td class="col-plan">月 20 回</td>
+          <td class="col-plan">月 200 回</td>
+          <td class="col-plan">月 500 回</td>
+        </tr>
+        <tr>
+          <td>チーム共有</td>
+          <td class="col-plan muted">—</td>
+          <td class="col-plan">3 人まで</td>
+          <td class="col-plan">10 人まで</td>
+        </tr>
+        <tr>
+          <td>差分プレビュー</td>
+          <td class="col-plan muted">—</td>
+          <td class="col-plan check">✓</td>
+          <td class="col-plan check">✓</td>
+        </tr>
+        <tr>
+          <td>カスタムテンプレート</td>
+          <td class="col-plan muted">—</td>
+          <td class="col-plan check">✓</td>
+          <td class="col-plan check">✓</td>
+        </tr>
+        <tr>
+          <td>優先サポート</td>
+          <td class="col-plan muted">—</td>
+          <td class="col-plan muted">—</td>
+          <td class="col-plan check">✓</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
